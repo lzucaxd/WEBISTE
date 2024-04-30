@@ -1,19 +1,63 @@
+/* General Body Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    padding-top: 70px; /* Give space for the fixed navbar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background: #f4f4f4;
+    padding-top: 56px; /* Space for fixed navbar */
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    top: 0;
+/* Header and Navigation Styles */
+header nav {
+    background-color: #343a40;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Main Content and Section Styles */
+main {
+    margin-top: 20px;
 }
 
 section {
-    margin-top: 20px;
+    background: white;
     padding: 20px;
-    background-color: #f8f9fa;
+    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+h1, h2 {
+    color: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design Tweaks */
+@media (max-width: 768px) {
+    header .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-brand {
+        margin-right: 20px;
+    }
+
+    .navbar-nav {
+        margin-top: 15px;
+    }
+}
