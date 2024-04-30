@@ -1,1 +1,19 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding-top: 70px; /* Give space for the fixed navbar */
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
