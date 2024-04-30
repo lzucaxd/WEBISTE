@@ -1,19 +1,48 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub Projects</title>
+    <title>Portfolio Website</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">My GitHub Projects</h1>
-        <div id="projects" class="row">
-            <!-- Projects will be injected here -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+            </ul>
         </div>
-    </div>
+    </nav>
+
+    <section id="home" class="container">
+        <h1>Welcome to My Portfolio</h1>
+        <p>This is the home page of my professional portfolio website. Here you can find my projects, resume, and more about me.</p>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div id="project-list" class="row"></div>
+    </section>
+
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <p>Add your resume content here or a link to download it.</p>
+    </section>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>This section is about me. Include your biography, photo, and contact information.</p>
+    </section>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
 </body>
