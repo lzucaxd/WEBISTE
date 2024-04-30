@@ -8,48 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container-fluid">
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
                 <a class="navbar-brand" href="#">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        <a class="nav-link" href="#projects">Projects</a>
-                        <a class="nav-link" href="#resume">Resume</a>
-                        <a class="nav-link" href="#about">About Me</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
+        <div class="hero-section text-center text-white">
+            <h1>Welcome to My Professional Portfolio</h1>
+            <p>Explore my projects, professional experiences, and learn more about me.</p>
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+        </div>
     </header>
 
-    <main class="container mt-5 pt-4">
-        <section id="home" class="pt-5">
-            <h1>Welcome to My Portfolio</h1>
-            <p>This is the home page of my professional portfolio website. Here you can find my projects, resume, and more about me.</p>
-        </section>
-
-        <section id="projects" class="pt-5">
-            <h2>Projects</h2>
-            <div id="project-list" class="row"></div>
-        </section>
-
-        <section id="resume" class="pt-5">
-            <h2>Resume</h2>
-            <p>Add your resume content here or a link to download it.</p>
-        </section>
-
-        <section id="about" class="pt-5 mb-5">
-            <h2>About Me</h2>
-            <p>This section is about me. Include your biography, photo, and contact information.</p>
-        </section>
+    <main class="container mt-4">
+        <!-- Sections will be added here -->
     </main>
 
-    <footer class="bg-dark text-light text-center p-3 mt-4">
+    <footer class="bg-dark text-white text-center p-3">
         <p>&copy; 2024 by My Portfolio. All rights reserved.</p>
     </footer>
 
