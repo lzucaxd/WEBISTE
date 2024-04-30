@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     fetchProjects();
 
     function fetchProjects() {
-        const username = '<your-github-username>'; // Replace this with your GitHub username
+        const username = 'lzucaxd'; // Replace this with your GitHub username
         const url = `https://api.github.com/users/${username}/repos?sort=pushed`;
         
         fetch(url)
