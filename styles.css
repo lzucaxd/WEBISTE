@@ -1,37 +1,29 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
-    background-color: #330000; /* Dark red background */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.site-header {
-    background: #440000; /* Slightly lighter red for the header */
-    padding: 20px 0;
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    color: rgba(255, 255, 255, 0.8);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.5);
+.navbar {
+    background-color: #333;
 }
 
 .hero-section {
-    padding: 50px 20px;
-    background: linear-gradient(45deg, #660000, #330000);
+    height: 100vh;
+    background: url('header-background.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-main {
-    background-color: #220000; /* Very dark red for the main content background */
-    color: #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: -60px; /* Overlap main with the header slightly */
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 footer {
-    background-color: #440000; /* Footer matches the header */
+    background-color: #222;
+    color: white;
+    padding: 10px;
 }
-
-/* Add more styles as needed */
